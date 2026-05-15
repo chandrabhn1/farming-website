@@ -15,8 +15,8 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     { image: '/images/farming_hero_image_1778760478639.png', title: 'Modernizing Agriculture', subtitle: 'Empowering farmers with data-driven technology.' },
-    { image: '/images/farming_slider_1_1778761271168.png', title: 'Sustainable Livestock', subtitle: 'Next-gen cattle and poultry management.' },
-    { image: '/images/farming_slider_2_1778761298662.png', title: 'Organic Future', subtitle: 'Purity in every drop and every grain.' }
+    { image: '/images/farming_slider_2_1778761298662.png', title: 'Sustainable Livestock', subtitle: 'Next-gen cattle and poultry management.' },
+    { image: '/images/farming_slider_3_1778761321793.png', title: 'Organic Future', subtitle: 'Purity in every drop and every grain.' }
   ];
 
   useEffect(() => {

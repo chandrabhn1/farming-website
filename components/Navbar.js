@@ -79,12 +79,12 @@ export default function Navbar() {
       }`}>
       <div className="container-fluid flex justify-between items-center px-6 md:px-16 max-w-[1400px] mx-auto">
         <Link href="/" className="flex items-center gap-4 group shrink-0">
-          <div className="relative w-[50px] h-[50px] md:w-[60px] md:h-[60px] bg-white rounded-2xl p-1.5 shadow-premium border border-gray-100 overflow-hidden transition-transform group-hover:scale-105">
+          <div className="relative w-[50px] h-[50px] md:w-[60px] md:h-[60px] bg-white rounded-full p-1 border-2 border-secondary overflow-hidden transition-transform group-hover:scale-105 shadow-premium">
             <Image src="/images/gyanti_official_logo.png" alt="Logo" fill className="object-contain p-1" />
           </div>
           <div className="flex flex-col leading-tight">
             <span className={`text-xl md:text-2xl font-black tracking-tight ${isScrolled ? 'text-primary' : 'text-white'}`}>GYANTI</span>
-            <span className={`text-[0.6rem] md:text-[0.7rem] font-extrabold uppercase tracking-[3px] md:tracking-[4px] ${isScrolled ? 'text-text-dark/60' : 'text-white/70'}`}>Multiservices</span>
+            <span className={`text-[0.6rem] md:text-[0.7rem] font-extrabold uppercase tracking-[3px] md:tracking-[4px] ${isScrolled ? 'text-text-dark/60' : 'text-white/70'}`}>Farming</span>
           </div>
         </Link>
 
@@ -137,13 +137,13 @@ export default function Navbar() {
           >
             {/* Mobile Menu Header */}
             <div className="flex justify-between items-center mb-12">
-              <div className="flex items-center gap-3">
-                <div className="relative w-10 h-10 bg-bg-light rounded-xl p-1.5 border border-gray-100">
-                  <Image src="/images/gyanti_official_logo.png" alt="Logo" fill className="object-contain" />
+            <div className="flex items-center gap-3">
+                <div className="relative w-12 h-12 bg-white rounded-full p-1 border-2 border-secondary overflow-hidden">
+                  <Image src="/images/gyanti_official_logo.png" alt="Logo" fill className="object-contain p-1" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-lg font-black text-primary tracking-tight">GYANTI</span>
-                  <span className="text-[0.5rem] font-bold uppercase tracking-[2px] text-text-dark/40">Multiservices</span>
+                  <span className="text-[0.5rem] font-bold uppercase tracking-[2px] text-text-dark/40">Farming</span>
                 </div>
               </div>
               <button onClick={() => setIsOpen(false)} className="w-12 h-12 bg-bg-light rounded-full flex items-center justify-center text-primary text-xl">
